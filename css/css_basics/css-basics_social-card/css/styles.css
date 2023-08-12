@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+img {
+  border-radius: 3%;
+}
+h2 {
+  text-transform: uppercase;
+}
+p {
+  color: black;
+  font-weight: bold;
+}
+.second {
+  color: rgb(173, 173, 173);
+}
+button {
+  color: blue;
+  font-size: medium;
+  outline: none;
+}
