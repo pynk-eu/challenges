@@ -10,11 +10,11 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-const title = "Reciepe book";
-const text = "Reciepe book contains the list of various delicious food items";
+const title = "Reciepe book ";
+const text = "Reciepe book contains the list of various delicious food items ";
 let numberOfLikes = 100;
 numberOfLikes++;
-const userName = "Priyanka";
+const userName = "Priyanka ";
 const isReported = true;
 
 // --^-- write your code here --^--
@@ -24,7 +24,7 @@ const isReported = true;
 */
 
 // --v-- write your code here --v--
-console.log(title + text + numberOfLikes + userName + isReported);
+console.log(title + text + numberOfLikes + " " + userName + isReported);
 
 //console.log(text);
 //console.log(numberOfLikes );
