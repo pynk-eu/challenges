@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Personal Profile Form</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <section></section>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Personal Profile Form</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <h3> Create Your Personal Profile </h3>
+  <section>
+    <form>
+      <p>We Want to get to know you! Please enter your personal infomation.</p>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="username">First Name:</label>
+        <input type="text" id="username" name="username">
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname">
+        <label for="birthday">Your Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+      </fieldset>
+
+      <p>Can you tell us a bit more? We want to annoy you with unwanted ads.</p>
+      <fieldset>
+        <legend>Further Information</legend>
+        <label for="favColor">Favourite Color:</label>
+        <input type="color" value="#E5430F">
+        <label for="favPet">What's your favourite pet?</label>
+        <select name="favPet" id="favPet">
+          <option value="--Please choose an option---">--Please choose an option---</option>
+          <option value="dog">dog</option>
+          <option value="Chicken">Chicken</option>
+          <option value="cat">cat</option>
+        </select>
+        <button type="submit" value="#E5430F">Submit</button>
+      </fieldset>
+
+    </form>
+
+  </section>
+</body>
+
 </html>
