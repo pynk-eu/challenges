@@ -7,11 +7,11 @@ function handleUserLogin(onSuccess) {
 
 // Call handleUserLogin below!
 function showWelcomeMessage() {
-  console.log("welcome!");
+  console.log("Welcome! You are logged in now.");
 }
 
 handleUserLogin(showWelcomeMessage);
 
 handleUserLogin(() => {
-  console.log("welcome!");
+  console.log("Welcome! You are logged in now.");
 });
