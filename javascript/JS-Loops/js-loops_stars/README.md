@@ -4,6 +4,7 @@ Let's build an awesome interactive 5-star rating scale! The goal is to display f
 
 ## Task
 
+
 ### Part 1: Render Stars
 
 Start by rendering 5 empty stars in the `starContainer`. For that, switch to [`index.js`](./js/index.js) and write the function `renderStars`:
