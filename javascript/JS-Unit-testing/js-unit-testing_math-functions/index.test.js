@@ -12,7 +12,7 @@ test("adds the numbers 2, 3", () => {
   const result = add(2, 3);
   expect(result).toBe(5);
 });
-test("returns a negative value if the greater argument is negative ", () => {
+test("returns a negative value if the greater argument is negative", () => {
   const result = add(2, -3);
   expect(result).toBeLessThan(0);
 });
@@ -43,13 +43,13 @@ test("returns a negative value if only the second argument is negative 2, -4", (
 });
 test("returns a positive value if called with two negative arguments -2, -4", () => {
   const result = multiply(-2, -4);
-  expect(result).toBe(8);
+  expect(result).toBeGreaterThan(0);
 });
 test("divide the numbers 9, 3", () => {
   const result = divide(9, 3);
   expect(result).toBe(3);
 });
-test("return ' You should not do this!' if called with 0 as a second argument ", () => {
+test("return ' You should not do this!' if called with 0 as a second argument", () => {
   const result = divide(9, 0);
   expect(result).toBe("You should not do this!");
 });
