@@ -10,7 +10,7 @@ Render an HTML `article` tag containing a heading and a paragraph to the browser
 
 Use the following hints as guideline:
 
-- In the [App.js](src/App.js), create a new function called `HelloWorldArticle()`.
+- In the [App.js](src/App.js), create a new function call.
 - `HelloWorldArticle()` should return an HTML `article` tag as a wrapper which contains;
   - an `h1` heading
   - at least one `p` tag
