@@ -13,10 +13,8 @@ export default function Form() {
           <br />
           <textarea id="notes"></textarea>
         </div>
+        <input type="submit" value="Check" />
       </form>
-      <button type="submit" className="button">
-        Create
-      </button>
     </div>
   );
 }
