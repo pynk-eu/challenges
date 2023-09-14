@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 
 export default function App() {
+  // Step 1 - Creating a state variable using "useState",
+  // calling it "holiday" and assigning it a default value of "janmashtimi"
+  const [holiday, setHoliday] = useState("janmashtimi");
+  const [date, setDate] = useState("28-10-2013");
+
   function handleSubmit(event) {
     event.preventDefault();
+    // Step 3 - Reassign the value of holiday by using the "setter" function
+    // provided to us by the "useState" hook
+    setHoliday(event.target.elements.holiday.value);
+    setDate(event.target.elements.date.value);
   }
 
   return (
@@ -30,10 +39,11 @@ export default function App() {
       </form>
       <h2>Output of Submitted Data</h2>
       <p>
-        Favourite Holiday: <span className="output">New Year</span>
+        {/* Step 2 - Use the "holiday" variable in our rendered p tag */}
+        Favourite Holiday: <span className="output">{holiday}</span>
       </p>
       <p>
-        Date: <span className="output">Well...</span>
+        Date: <span className="output">{date}</span>
       </p>
     </div>
   );
