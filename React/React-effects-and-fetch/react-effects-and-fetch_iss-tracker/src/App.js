@@ -19,10 +19,10 @@ export default function App() {
 
   useEffect(() => {
     const IntervalID = setInterval(getISSCoords, 5000);
-    console.log(IntervalID);
-    clearInterval(IntervalID);
+
+    return () => clearInterval(IntervalID);
   }, []);
-  //
+
   return (
     <main>
       <Map longitude={coords.longitude} latitude={coords.latitude} />
