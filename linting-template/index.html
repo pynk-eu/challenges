@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toggle button</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="index.js" type="module"></script>
+</head>
+
+<body>
+  <button class="btn" data-js="addBtn">Add</button>
+  <section>
+    <form class="formInput" data-js="form">
+      <label for="userName">Name:</label>
+      <input type="text" id="userName" name="userName" />
+      <label for="userAge">Age:</label>
+      <input type="text" id="userAge" name="userAge" />
+      <label for="userLocation">Location:</label>
+      <input type="text" id="userLocation" name="userLocation" />
+      <button>Save</button>
+    </form>
+  </section>
+
+  <ol class="people-list" data-js="people-list"></ol>
+</body>
+
+</html>
