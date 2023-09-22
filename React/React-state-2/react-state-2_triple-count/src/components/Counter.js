@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function Counter() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(3);
 
   function handleIncrement() {
     setCount(count + 1);
@@ -17,7 +17,7 @@ export default function Counter() {
         className="counter__button"
         onClick={handleIncrement}
       >
-        Increment count by 3
+        Increment count by {count}
       </button>
     </div>
   );
