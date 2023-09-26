@@ -8,7 +8,13 @@ jest.mock("next/router", () => ({
   },
 }));
 
-test("renders two input fields and a button", () => {});
+test("renders two input fields and a button", async () => {
+  render(<GameForm />);
+  const label = await screen.findAllByRole("textbox");
+  const btn = await screen.findAllByRole("button");
+  expect(label.length).toBe(2);
+  expect(btn.length).toBe(1);
+});
 
 test("renders a form with the accessible name 'Create a new game'", () => {});
 

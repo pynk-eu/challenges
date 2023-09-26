@@ -31,7 +31,9 @@ export default function GameForm({ onCreateGame }) {
       onSubmit={handleSubmit}
       autoComplete="off"
     >
-      <h2 id="formHeader">Create a new game</h2>
+      <h2 id="formHeader" data-testid="formHeader">
+        Create a new game
+      </h2>
       <Input
         name="nameOfGame"
         labelText="Name of game"
