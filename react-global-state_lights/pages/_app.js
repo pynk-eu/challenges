@@ -2,8 +2,6 @@ import GlobalStyle from "../styles";
 import Layout from "../components/Layout";
 import { useState } from "react";
 
-
-
 export default function App({ Component, pageProps }) {
   const lightState = [
     { id: 0, name: "Living Room", isOn: true },
@@ -15,11 +13,17 @@ export default function App({ Component, pageProps }) {
     { id: 6, name: "Garden", isOn: true },
     { id: 7, name: "Office", isOn: true },
   ];
+
   const [lights, setLights] = useState(lightState);
+
+  function handelToggle() {
+    setLights();
+  }
+
   return (
-    <Layout >
+    <Layout>
       <GlobalStyle />
-      <Component {...pageProps} lights={lights}/>
+      <Component {...pageProps} lights={lights} handelToggle={handelToggle} />
     </Layout>
   );
 }
