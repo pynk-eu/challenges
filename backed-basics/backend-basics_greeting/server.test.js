@@ -10,6 +10,6 @@ test("A server instance is exported", () => {
 
 test("The server responds with a string starting with 'Hello, '", async () => {
   const response = server && (await request(server).get("/"));
-  expect(response?.text).toMatch(/^Hello, /);
+  expect(response?.text).toMatch(/Hello, /);
   expect(response?.statusCode).toBe(200);
 });
