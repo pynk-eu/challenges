@@ -8,6 +8,29 @@ const Heading = styled.h1`
 `;
 
 export default function HomePage() {
+  async function handleAddProduct(event) {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+    const productData = Object.fromEntries(formData);
+
+    const response = await fetch("/api/products", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(productData),
+    });
+
+    if (!response.ok) {
+      console.error(response.status);
+      return;
+    }
+
+    mutate();
+    event.target.reset();
+  }
+
   return (
     <>
       <Heading>
@@ -16,7 +39,7 @@ export default function HomePage() {
         </span>
         Fish Shop
       </Heading>
-      <ProductForm />
+      <ProductForm onSubmit={handleAddProduct} />
       <hr />
       <ProductList />
     </>

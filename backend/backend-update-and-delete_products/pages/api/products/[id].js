@@ -14,4 +14,16 @@ export default async function handler(request, response) {
 
     response.status(200).json(product);
   }
+
+  if (request.method === "PUT") {
+    const updatedProduct = await Product.findByIdAndUpdate(
+      id,
+      {
+        $set: request.body,
+      },
+      { new: true }
+    );
+    console.log(updatedProduct);
+    return response.status(200).json(updatedProduct);
+  }
 }
